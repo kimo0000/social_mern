@@ -1,0 +1,18 @@
+.home {
+  height: 100vh;
+  display: grid;
+  grid-template: auto 1fr / repeat(10, 1fr) ;
+  gap: 15px;
+}
+.home header {
+  grid-area: 1 / 1 / 2 / -1;
+}
+.home .sidebar {
+  grid-area: 2 / 1 / -1 / span 2;
+}
+.home .content_app {
+  grid-area: 2 / 3 / -1 / span 6;
+}
+.home .right_bar {
+  grid-area: 2 / 9 / -1 / -1;
+}

@@ -1,0 +1,126 @@
+header {
+  max-height: 70px;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background-color: blueviolet;
+  color: azure;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+.search_timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+@media (max-width: 765px) {
+  .search_timeline {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 240px;
+  border-radius: 20px;
+  height: 30px;
+  position: relative;
+}
+.search input {
+  width: 100%;
+  height: 100%;
+  padding: 6px 25px;
+  border-radius: 20px;
+}
+.search svg {
+  position: absolute;
+  color: #000;
+  left: 6px;
+}
+.time_line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+}
+.time_line li {
+  opacity: 0.5;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+.time_line li:hover {
+  opacity: 1;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+.icons svg {
+  opacity: .5;
+  transition: opacity .3s;
+  cursor: pointer;
+}
+.icons svg:hover {
+  opacity: 1;
+}
+.icon span {
+  display: inline-block;
+  font-size: 10px;
+  background-color: red;
+  color: azure;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -10px;
+}
+.user_loged .user_link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: azure;
+  cursor: pointer;
+}
+.user_loged span {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.user_loged img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* @media (max-width: 765px) {
+  .user_loged {
+    display: none;
+  }
+} */
+

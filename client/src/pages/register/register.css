@@ -1,0 +1,90 @@
+.register {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 965px) {
+  .register {
+    flex-direction: column;
+  }
+}
+.title_app {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.title_app h1 {
+  color: #007bff;
+  font-weight: 900;
+}
+.title_app p {
+  color: #777;
+}
+@media (max-width: 965px) {
+  .title_app p {
+     font-size: 12px;
+  }
+}
+.register_wrapper {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  max-width: 320px;
+  margin: 25px auto;
+  border-radius: 5px;
+}
+.register_wrapper h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.register_wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.register_wrapper div {
+  display: flex;
+  flex-direction: column;
+}
+.register_wrapper input {
+  font-size: 12px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.register_wrapper input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.register_wrapper_btn {
+  padding: 6px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.register_wrapper p {
+  font-size: 12px;
+  padding: 0;
+  margin: 0 0 6px 0;
+}
+.register_wrapper p a {
+  padding-left: 8px;
+  display: inline-block;
+  font-size: 14px;
+  transform: scale(1);
+  transition: all .2s ease;
+  cursor: pointer;
+}
+.register_wrapper p a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+  transform: scale(1.1);
+}
