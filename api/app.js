@@ -6,11 +6,14 @@ const dotenv = require('dotenv');
 const helmet = require('helmet');
 const morgan = require('morgan');
 
+const multer = require('multer');
+const path = require("path");
+
 const userRoute = require('./routes/users');
 const authRoute = require('./routes/auth');
 const postRoute = require('./routes/posts');
-const multer = require('multer');
-const path = require("path");
+const ConversationRoute = require('./routes/Conversation');
+const MessageRoute = require('./routes/Message');
 
 dotenv.config();
 
@@ -52,17 +55,17 @@ app.post('/api/upload', upload.single('file'), (req, res) => {
 });
 
 
-
-
 // Home Page
 app.get("/", (req, res) => {
   res.send('home page');
 });
 
-// authenticaation & user action
+// authentication & user action
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/posts", postRoute);
+app.use("/api/conversations", ConversationRoute);
+app.use("/api/messages", MessageRoute);
 
 
 

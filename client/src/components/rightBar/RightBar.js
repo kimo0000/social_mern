@@ -50,7 +50,7 @@ function RightBar({ user }) {
     } catch (err) {
       console.log(err);
     }
-    
+
     setFollowed(!followed);
   };
 
@@ -125,7 +125,7 @@ function RightBar({ user }) {
         </ul>
         <h4 className="profile_title">User Friends:</h4>
         <ul className="lists_users_friends">
-          {friends.map((friend) => {
+          {friends.map((friend, i) => {
             return (
               <Link to={`/profile/${friend.username}`} key={friend._id}>
                 <li className="user_fr_onligne" id={friend._id}>
@@ -138,7 +138,9 @@ function RightBar({ user }) {
                     alt=""
                     // crossOrigin="anonymous"
                   />
-                  <div className="username">{friend.username}</div>
+                  <div className="username">
+                    {friend.username.length <= 16 ? friend.username : friend.username.slice(0, 16)+"..."}
+                  </div>
                 </li>
               </Link>
             );

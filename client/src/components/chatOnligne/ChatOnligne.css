@@ -1,0 +1,24 @@
+.chat_onligne {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  cursor: pointer;
+}
+.chat_onligne img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.chat_onligne .bulle_chat {
+  width: 8px;
+  height: 8px;
+  border: 1px solid #fff;
+  background-color: goldenrod;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}

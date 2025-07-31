@@ -50,7 +50,7 @@ export default function Share() {
           src={
             user.profilePicture
               ? PF + user.profilePicture
-              : `${PF}person/no_avatar.jpg`
+              : `${PF}/person/no_avatar.jpg`
           }
           alt="img user"
         />

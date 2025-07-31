@@ -6,7 +6,7 @@ export default function OnlineUser({user}) {
 
   return (
     <li className="list_user_on_ligne">
-                 <img src={PF+user.profilePicture} alt="img"
+                 <img src={PF+"/"+user.profilePicture} alt="img"
                   //  crossOrigin="anonymous"
                  />
                  <span className="bull"></span>

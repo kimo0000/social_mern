@@ -1,0 +1,38 @@
+.user_msg {
+  padding: 0 10px 0 0;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.user_msg.own {
+  align-items: end;
+}
+.user_msg_top {
+  display: flex;
+  gap: 8px;
+}
+.user_msg_top.own {
+  flex-direction: row-reverse;
+}
+.user_msg .user_msg_top img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.user_msg_top .msg_user {
+  background-color: blueviolet;
+  color: #fff;
+  border-radius: 12px;
+  padding: 8px;
+  max-width: 180px;
+}
+.user_msg.own .msg_user {
+  background-color: #eee;
+  color: #000;
+}
+.user_msg_bottom .created_at {
+  font-size: 10px;
+  color: #777;
+}

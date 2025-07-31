@@ -1,0 +1,25 @@
+.chat_menu_lists {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.chat_menu_list {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background .2s ease;
+  cursor: pointer;
+}
+.chat_menu_list:hover {
+  background-color: #ddd;
+}
+.chat_menu_list img {
+   width: 32px;
+   height: 32px;
+   border-radius: 50%;
+   object-fit: cover;
+}
+.chat_menu_username {
+  font-size: 10px;
+
+}
