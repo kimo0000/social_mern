@@ -1,7 +1,3 @@
-📝 README.md pour ton projet Social App
-markdown
-Copier
-Modifier
 # 🌐 Social App – MERN Chat en temps réel (Socket.io)
 
 Ce projet est une application sociale full-stack développée avec la stack **MERN** (MongoDB, Express.js, React.js, Node.js), intégrant un système de **chat en temps réel** grâce à **Socket.io**.
