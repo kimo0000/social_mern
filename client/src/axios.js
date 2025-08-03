@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://social-mern-backend-c0xt.onrender.com/api/";
+const BASE_URL = "https://social-mern-back.onrender.com/server/";
 
 const publicRequest = axios.create({
   baseURL: BASE_URL,
