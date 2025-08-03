@@ -1,0 +1,97 @@
+.right_bar {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 12px;
+  overflow-y: scroll;
+}
+.right_bar_head {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.right_bar_head img {
+  width: 45px;
+  height: 45px;
+}
+@media (max-width: 965px) {
+  .right_bar_head {
+    display: none;
+  }
+}
+.right_bar_center img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+@media (max-width: 965px) {
+  .right_bar_center {
+    display: none;
+  }
+}
+@media (max-width: 965px) {
+  .right_bar_foot h4 {
+    font-size: 16px;
+  }  
+}
+.lists_user_on_ligne {
+  padding: 0 0 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+@media (max-width: 765px) {
+  .lists_user_on_ligne {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Profile User Right Bar */
+.profileRightBtn {
+  background-color: blueviolet;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.profile_title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.lists_users_friends {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+@media (max-width: 965px) {
+  .lists_users_friends {
+    justify-content: center;
+  }
+}
+.user_fr_onligne {
+  max-width: 80px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  position: relative;
+  background-color: #eee;
+}
+.lists_users_friends img {
+  width: 45px;
+  height: 45px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  object-fit: cover;
+}
+.user_fr_onligne .username {
+  padding: 0 2px;
+  font-size: 10px;
+  font-weight: 500;
+  color: #333;  
+  text-align: center;
+  margin-top: 5px;
+  text-wrap: wrap;
+}

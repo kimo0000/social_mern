@@ -1,0 +1,92 @@
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.post {
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 3px 0px #777;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.post_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.post_left img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.post_left strong, .post_left span {
+  font-size: 12px;
+}
+.post_left span {
+  font-size: 10px;
+  color: #777;
+}
+.post_right svg {
+  opacity: .5;
+  transition: opacity .3s;
+  cursor: pointer;
+}
+.post_right svg:hover {
+  opacity: 1;
+}
+.post_foot {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.post_foot_desc {
+  font-size: 14px;
+  color: #777;
+  text-wrap: wrap;
+}
+.wrapper_img {
+  overflow: hidden;
+  border-radius: 12px;
+}
+.post_foot img {
+  border-radius: 12px;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform .2s;
+}
+.post_foot img:hover {
+   transform: scale(1.1) rotate(2deg);
+}
+.like_comment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+}
+.like_heart {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.like_heart svg {
+  cursor: pointer;
+  opacity: .5;
+  transition: opacity .2s;
+}
+.like_heart svg:hover {
+  opacity: 1;
+}
+.like.active, .heart.active {
+  opacity: 1;
+}
