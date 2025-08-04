@@ -20,7 +20,9 @@ function App() {
         <Route path="/" element={user ? <Home /> : <Register />}/>
         <Route path="/register" element={user ? <Navigate to="/" /> : <Register />} />
         <Route path="/login" element={user ? <Navigate to="/" /> : <Login />} />
-        <Route path="/messenger" element={!user ? <Navigate to="/" /> : <Messenger />} />
+        <Route path="/messenger" element={
+          // !user ? <Navigate to="/" /> :
+          <Messenger />} />
         <Route path="/forgot_password" element={<ForgotPassword />} />
         <Route path="/profile/:username" element={<Profile />} />
       </Routes>
