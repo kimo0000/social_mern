@@ -62,7 +62,7 @@ function RightBar({ user }) {
           <img
             src="/assets/gift.png"
             alt="pic cadeaux"
-            crossOrigin="anonymous"
+            // crossOrigin="anonymous"
           />
           <p>
             <strong>Pola Foster</strong> and

@@ -31,6 +31,7 @@ mongoose
 });
 
 app.use("/images", express.static(path.join(__dirname, "public/images")));
+// app.use('/images', express.static(path.join(__dirname, 'images')));
 
 // Middleware
 app.use(express.json());
@@ -61,6 +62,10 @@ app.post('/server/upload', upload.single('file'), (req, res) => {
 // Home Page
 app.get("/", (req, res) => {
   res.send("API is running......");
+});
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 // authentication & user action

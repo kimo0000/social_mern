@@ -45,7 +45,7 @@ function Header() {
       </ul>
       <div className="user_loged">
         <Link to={`/profile/${user?.username}`} className="user_link">
-        <img src={user.profilePicture ? PF+user.profilePicture : `${PF}/person/no_avatar.jpg`} alt="Img"
+        <img src={user.profilePicture ? PF+user.profilePicture : `${PF}/person/no_avatar.jpg`} alt="Img" loading="lazy"
           // crossOrigin="anonymous"
         />
         <span>{user.username}</span>

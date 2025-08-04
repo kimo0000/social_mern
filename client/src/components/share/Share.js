@@ -54,6 +54,7 @@ export default function Share() {
               : `${PF}/person/no_avatar.jpg`
           }
           alt="img user"
+          
         />
         <input
           type="text"
