@@ -105,4 +105,4 @@ N’hésite pas à laisser une ⭐ sur le dépôt !
 *DOMAIN SOCIAL APP BACKEND:
 lien: https://social-mern-back.onrender.com/
 *DOMAIN SOCIAL APP FRONTEND:
-lien: https://social-mern-frontend.onrender.com
+lien: https://social-mern-front.vercel.app/

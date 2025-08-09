@@ -10,6 +10,7 @@ import { BsCalendar2Event } from "react-icons/bs";
 import { FaUserGraduate } from "react-icons/fa";
 import CloseFriend from "../closeFriend/CloseFriend";
 import { Users } from '../../allData';
+console.log(Users, "from Sidebar");
 
 const arrIcons = [
   {

@@ -5,7 +5,7 @@ export default function CloseFriend({user}) {
 
   return (
       <li key={user.id} className="side_user">
-            <img src={PF+"/"+user.profilePicture} alt="user img"
+            <img src={PF+user.profilePicture} alt="user img"
             />
             <span className="bulle active"></span>
             <span>{user.username}</span>
