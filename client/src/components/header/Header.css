@@ -128,4 +128,9 @@ header {
     display: none;
   }
 } */
+.btn_logout {
+  transform: rotate(45deg);
+  font-size: 22px;
+  color: azure;
+}
 
