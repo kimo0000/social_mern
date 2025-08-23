@@ -6,6 +6,7 @@ import { IoIosNotifications } from "react-icons/io";
 import { Link } from 'react-router-dom';
 import { AuthContext } from "../../context/AuthContextProvider";
 import { useContext } from "react";
+import { AiOutlineLogout } from "react-icons/ai";
 
 
 function Header() {
@@ -57,8 +58,11 @@ function Header() {
         </Link>
       </div>
       <button onClick={logout}
-       
-      >Logout</button>
+        title="Logout"
+        className="btn_logout"
+      >
+        <AiOutlineLogout />
+      </button>
     </header>
   );
 }
