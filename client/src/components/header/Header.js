@@ -56,7 +56,9 @@ function Header() {
         <span>{user.username}</span>
         </Link>
       </div>
-      <button onClick={logout}>Logout</button>
+      <button onClick={logout}
+       
+      >Logout</button>
     </header>
   );
 }

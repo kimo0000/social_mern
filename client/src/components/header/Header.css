@@ -71,6 +71,11 @@ header {
   gap: 12px;
   position: relative;
 }
+@media (max-width: 765px) {
+  .icons {
+    display: none;
+  }
+} 
 .icons svg {
   opacity: .5;
   transition: opacity .3s;
