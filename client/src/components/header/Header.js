@@ -13,6 +13,11 @@ function Header() {
 
   const { user } = useContext(AuthContext);
 
+  const logout = ()=>{
+    localStorage.clear();
+    window.location.reload();
+  } 
+
   return (
     <header className="header">
       <Link to="/" title="Home Page" className="logo">Social App</Link>
@@ -51,6 +56,7 @@ function Header() {
         <span>{user.username}</span>
         </Link>
       </div>
+      <button onClick={logout}>Logout</button>
     </header>
   );
 }
