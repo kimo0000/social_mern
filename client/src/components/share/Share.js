@@ -26,14 +26,14 @@ export default function Share() {
 
     if(file) {
       const data = new FormData();
-      const fileName = Date.now() + file.name;
-      data.append("name", fileName);
       data.append("file", file);
-      newPost.img = fileName;
       try {
-        await publicRequest.post("/upload", data)
+        // The server chooses the file name and sends it back.
+        const res = await publicRequest.post("/upload", data);
+        newPost.img = res.data.filename;
       } catch(err) {
         console.log(err);
+        return; // image refused: don't publish the post without it
       }
     }
 
